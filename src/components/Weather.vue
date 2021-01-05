@@ -170,8 +170,8 @@ export default {
       const baseTimeUTC = new Date();
 
       const timeCheck =
-        // '-3600' becasue of summer daylight savings
-        baseTimeUTC.getHours() + (this.data.timezone - 3600) / 3600;
+        // add '-3600' to 'this.data.timezone' during summer daylight savings
+        baseTimeUTC.getHours() + (this.data.timezone) / 3600;
 
       // resets time based on 24 hour clock, moving the date value uo or down where necessary
       if (timeCheck >= 24) {
@@ -268,109 +268,179 @@ export default {
 </script>
 
 <style scoped>
-.start {
-  font-size: 5vh;
-  margin-top: 10vh;
-  color: rgb(6, 84, 173);
-}
 
-.container {
+.main-info{
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.main-info {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 1%;
-}
-
-.image-container {
+.image-container{
   height: 20vh;
-  width: 40%;
-  display: flex;
-  align-items: center;
-  margin: 0 0 0 10%;
 }
 
-.main-icon {
-  width: 100%;
-  transform: scale(1.1);
-}
-
-.time-temp-container {
-  height: 20vh;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  font-size: 3.5em;
-}
-
-.main-time {
-  margin: 5%;
-}
-
-.main-temp {
-  margin: 5%;
-}
-
-.extra-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.extra-info {
-  width: 45%;
-  font-size: 3.3em;
-  margin: 0 0 0 5%;
-}
-
-.extra-info p {
-  margin: 0 5% 20% 5%;
-}
-
-.icon {
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-}
-
-.legend {
-  margin: 5% 0 10% 0;
-  width: 100%;
-  text-align: right;
-  font-size: 5em;
-  height: fit-content;
-  color: rgb(255, 255, 255);
-}
-
-.legend-icon {
-  margin: 0 11% 0 0;
-}
-
-.legend-info-container {
-  width: 45%;
-  font-size: 3.3em;
+.main-icon{
   height: 100%;
-  font-style: italic;
-  opacity: 0.5;
 }
 
-.legend-info {
-  margin: 0 5% 20% 5%;
+.time-temp-container{
+  height: 20vh;
+  font-size: 2.5em;
+}
+
+.extra-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2em;
+}
+
+.legend{
+  margin-left: 20%;
+}
+
+.extra-info{
+  padding-left: 5%;
+}
+
+.legend-info-container{
+  padding-left: 25%;
+  color: rgb(222, 225, 228);
+  font-style: italic;
+  opacity: 0.7;
 }
 
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .start {
+    font-size: 5vh;
+    margin-top: 10vh;
+    color: rgb(6, 84, 173);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-info {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1%;
+  }
+
+  .image-container {
+    height: 20vh;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10%;
+  }
+
+  .main-icon {
+    height: auto;
+    width: 100%;
+    transform: scale(1.1);
+  }
+
+  .time-temp-container {
+    height: 20vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 3.5em;
+  }
+
+  .main-time {
+    margin: 5%;
+  }
+
+  .main-temp {
+    margin: 5%;
+  }
+
+  .extra-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+
+  .extra-info {
+    width: 45%;
+    font-size: 3.3em;
+    margin: 0 0 0 5%;
+    padding: 0;
+  }
+
+  .extra-info p {
+    margin: 0 5% 20% 5%;
+  }
+
+  .icon {
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  }
+
+  .legend {
+    margin: 5% 0 10% 0;
+    width: 100%;
+    text-align: right;
+    font-size: 5em;
+    height: fit-content;
+    color: rgb(255, 255, 255);
+  }
+
+  .legend-icon {
+    margin: 0 11% 0 0;
+  }
+
+  .legend-info-container {
+    width: 45%;
+    font-size: 3.3em;
+    height: 100%;
+    font-style: italic;
+    opacity: 0.5;
+    padding: 0;
+  }
+
+  .legend-info {
+    margin: 0 5% 20% 5%;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+}
+
+
+
 </style>
