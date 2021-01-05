@@ -31,7 +31,7 @@ export default {
 
 <style scoped>
 
-.top-container{ /* Reset to nothing in media query*/
+.top-container{
   display: flex;
   flex-direction: column;
 }
@@ -84,6 +84,7 @@ export default {
     font-size: 7vw;
     color: rgb(255, 255, 255);
     padding: 2vh 0 2vh 0;
+    margin: 0;
     border-bottom: 1px solid rgb(90, 87, 87);
   }
 

@@ -327,15 +327,10 @@ export default {
 
 @media only screen and (max-width: 768px) {
 
-  .start {
-    font-size: 5vh;
-    margin-top: 10vh;
-    color: rgb(6, 84, 173);
-  }
-
   .container {
     display: flex;
     flex-direction: column;
+    margin-top: 2%;
   }
 
   .main-info {
@@ -370,7 +365,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 3.5em;
+    font-size: 2em;
   }
 
   .main-time {
@@ -386,11 +381,12 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1em;
+    margin-top: 1%;
   }
 
   .extra-info {
     width: 45%;
-    font-size: 3.3em;
+    font-size: 1.5em;
     margin: 0 0 0 5%;
     padding: 0;
   }
@@ -405,10 +401,10 @@ export default {
   }
 
   .legend {
-    margin: 5% 0 10% 0;
+    margin: 2% 0 10% 0;
     width: 100%;
     text-align: right;
-    font-size: 5em;
+    font-size: 2em;
     height: fit-content;
     color: rgb(255, 255, 255);
   }
@@ -419,7 +415,7 @@ export default {
 
   .legend-info-container {
     width: 45%;
-    font-size: 3.3em;
+    font-size: 1.5em;
     height: 100%;
     font-style: italic;
     opacity: 0.5;
