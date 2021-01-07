@@ -1,7 +1,7 @@
 
 This web app shows users weather data at a chosen location.
 
-This project was built to show proficency in the **JS framework Vue**m **webpack**, and also to show a familarity working with API's.
+This project was built to show proficency in the **JS framework Vue**, **webpack**, and also to show a familarity working with **API's**.
 
 **The API used in this web app is the 'Weather API' offered by openweathermap.org. 
 Link: https://openweathermap.org/api**
