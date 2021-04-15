@@ -1,4 +1,6 @@
 
+#:umbrella: :sunny: :cloud:
+
 This web app shows users weather data at a chosen location.
 
 This project was built to show proficency in the **JS framework Vue**, **webpack**, and also to show a familarity working with **API's**.
@@ -15,4 +17,4 @@ Link to live demo - https://studiousvanilla.github.io/weather-app/
 
 [![Screenshot-2021-01-07-at-12-52-30.png](https://i.postimg.cc/VNzTDQcx/Screenshot-2021-01-07-at-12-52-30.png)](https://postimg.cc/QFn0dzCm)
 
-Made by Oisín Byrne - 2020 - https://studiousvanilla.github.io/portfolio/
+Made by Oisín Byrne - 2020 - https://www.oisinbyrne.me/
