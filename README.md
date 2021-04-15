@@ -1,5 +1,5 @@
 
-#:umbrella: :sunny: :cloud:
+#:umbrella: :sunny: :cloud:#
 
 This web app shows users weather data at a chosen location.
 
